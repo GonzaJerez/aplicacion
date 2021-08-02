@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Temporizador</title>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link id="theme" rel="stylesheet" type="text/css" href="./css/light.css">
+	<script type="text/javascript" defer src="./js/temporizador.js"></script>
+</head>
+
+<body>
+
+	<a id="atras" href="../pantalla_inicio/index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg>
+    </a>
+
+	<div id="seleccionador">
+		<select class="select select_minutos">
+		</select>
+		<span style="margin-right: 45px;;">minutos</span>
+		<select class="select select_segundos"></select>
+		<span>segundos</span>
+	</div>
+
+
+	<div id="tiempo" style="display: none;">
+		<span id="minutos"></span>
+		<span id="segundos">:</span>
+		<span id="decimas">:</span>
+	</div>
+
+	<div id="controlador">
+		<button id="iniciar" class="verde">Iniciar</button>
+		<div id="borde" class="bordeVerde"></div>
+		<button id="reiniciar" disabled="disabled" style="display: none;">Reiniciar</button>
+		<div id="borde2" class="bordeGris" style="display: none;"></div>
+		<button id="cancelar" style="display: none;">Cancelar</button>
+		<div id="borde3" class="bordeBlanco" style="display: none;"></div>
+	</div>
+
+	<div id="div_audio">
+		<!-- <audio id="audioID" controls> 
+			<source src="alarma.mp3"  type="audio/mp3">
+		</audio> -->
+	</div>
+
+</body>
+
+</html>

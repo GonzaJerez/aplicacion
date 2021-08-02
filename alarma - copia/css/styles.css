@@ -1,0 +1,225 @@
+select {
+    -webkit-appearance: none;
+}
+
+body{
+    font-family: system-ui;
+    display: grid;
+    grid-template-columns:50% 1fr;
+    
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#atras svg{
+    margin-bottom: 30px;
+    color: #313131;
+    transition: all 300ms;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 10px;
+}
+#atras svg:hover{
+    transform: scale(1.1,1.1);
+}
+
+/* ______________ ZONA ALARMAS __________________ */
+
+#contenedor_alarmas{
+    margin: 5px;
+    width: 100%;
+    grid-column: 1 / 2;
+}
+
+.alarma{
+    margin-left: 40px;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.borrar{
+    overflow: hidden;
+    float: left;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    transition: all 500ms;
+}
+
+ .borrar button{
+    border: 0px;
+    background-color: transparent;
+    height: 31px;
+    width: 31px;
+    border-radius: 50%;
+  
+ }
+
+.borrar button img{
+    height: 30px;
+    width: 30px;
+    margin-left: -5.51px;
+    margin-top: -0.1px;
+    border-radius: 50%;
+}
+
+
+.hora_descripcion{
+    float: left;
+    height: 125px;
+}
+
+.hora{
+    font-size: 55px;
+    border: 0px;
+    padding: 0px;
+}
+
+.form-switch{
+    float: left;
+    display: flex;
+    height: 125px;
+    margin-left: 400px;
+    align-items: center;
+}
+
+.form-check-input{
+    width: 45px !important;
+    height: 25px;
+}
+
+.alarma_editada{
+    float: left;
+    display: flex;
+    height: 125px;
+    margin-left: 400px;
+    align-items: center;
+}
+
+.alarma_editada button{
+    height: 25px;
+    font-size: 22px;
+}
+
+.tiempo_restante{
+    position: absolute;
+    border-radius: 2% / 11%;
+    height: 40px;
+    padding: 5px;
+    margin-top: 42px;
+    margin-left: 50px;
+    transition: all 500ms;
+}
+
+/* _____________ ZONA BOTONES _____________________ */
+
+#contenedor_botones{
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+}
+
+#boton_editar{
+    font-size: 30px;
+    margin-right: 80px;
+    float: right;
+}
+
+#boton_agregar{
+    font-size: 35px;
+    margin-right: 40px;
+    float: right;
+}
+
+/* _________ CARTEL NUEVA ALARMA _____________ */
+
+#nueva_alarma{
+    width: 300px;
+    overflow: hidden;
+    outline: 0px;
+    float: right;
+    position: fixed;
+    margin-left: 75%;
+    margin-top: 65px;
+    transition: all 500ms;
+    box-sizing: unset;
+    border-radius: 3%;
+}
+
+
+#guardar{
+    float: left;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#cancelar{
+    float: right;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.botones{
+    border: 0px;
+    margin: 10px;
+}
+
+.botones:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#nuevo_horario{
+    width: 100%;
+    text-align: center;
+}
+
+#select_hora, 
+#select_minutos{
+    margin: 12px;
+    width: 60px;
+    height: 60px;
+    font-size: 55px;
+    text-align: center;
+    line-height: 60px;
+    border: 0px;
+    list-style: none;
+}
+
+#select_hora option,
+#select_minutos option{
+    font-size: 12px;
+}
+
+#select_hora:focus-visible,
+#select_minutos:focus-visible{
+    outline: 0px;
+}
+
+#dos_puntos{
+    font-size: 55px;
+}
+
+#descripcion_alarma{
+    width: 100%;
+}
+
+#basic-addon1{
+    height: 40px;
+    font-size: 15px;
+
+}
+#nueva_alarma form input{
+    padding-left: 10px;
+    margin: 0px auto;
+    display: flex;
+    border: 1px solid #ccc;
+    outline: 0px;
+    font-size: 14px;
+
+}

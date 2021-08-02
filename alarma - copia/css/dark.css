@@ -1,0 +1,74 @@
+
+.dark-body{
+    background-color: #060606;
+}
+
+.dark-body hr{
+    color: white;
+}
+
+/* ______________ ZONA ALARMAS __________________ */
+
+
+.dark-body .borrar button img{
+    background-color: rgb(255 0 0);
+}
+
+.dark-body .hora_descripcion{
+    color: white;
+}
+
+.dark-body .hora{
+    background-color: transparent;
+    color: #f5f5f5;
+}
+
+.dark-body .tiempo_restante{
+    border: 1px solid #ccc;
+    opacity: 0.9;
+    color: #efefef;
+}
+
+/* _________ CARTEL NUEVA ALARMA _____________ */
+
+.dark-body #nueva_alarma{
+    background-color: #020202;
+}
+
+.dark-body #nueva_alarma hr{
+    color: gray;
+}
+
+.dark-body .botones{
+    background-color: transparent;
+    color: #ff6218;
+}
+
+.dark-body #select_hora, 
+.dark-body #select_minutos{
+    background-color: transparent;
+    color: #f5f5f5;
+}
+
+.dark-body #select_hora option,
+.dark-body #select_minutos option{
+    color: #0a0a0a;
+}
+
+.dark-body #dos_puntos{
+    color: #f5f5f5;
+}
+
+.dark-body #basic-addon1{
+    background-color: #1f1f1f;
+    color: white;
+    border: 1px solid #464646;
+}
+.dark-body #nueva_alarma form input{
+    background-color: rgb(248, 248, 248);
+    color: #464646;
+}
+
+.dark-body #atras svg{
+    color: #ccc;
+}

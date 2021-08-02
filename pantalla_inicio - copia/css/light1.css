@@ -1,0 +1,34 @@
+.light-body {
+  background-color: #e0e0e0;
+}
+.light-body #pelota_fondo {
+  background: radial-gradient(white 4%, #e4e4e494 45%, #1919198a 71%);
+}
+.light-body #buscando {
+  color: black;
+}
+.light-body #buscando #spinner {
+  border: 3px solid black;
+  border-left-color: transparent;
+}
+.light-body #hora_argentina {
+  color: black;
+}
+.light-body #fecha_argentina {
+  color: black;
+}
+.light-body #menu {
+  /* border-top: 1px solid white; */
+  background-color: #b1b1b1;
+}
+.light-body #menu li {
+  border-right: 1px solid #2e2e2e;
+}
+.light-body #menu svg {
+  color: #303030;
+}
+.light-body #menu svg:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=light1.css.map */

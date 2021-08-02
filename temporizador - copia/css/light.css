@@ -1,0 +1,51 @@
+body{
+    background-color: #e0e0e0;
+}
+
+#seleccionador{
+    color: black;
+}
+
+.select{
+    color: black;
+}
+
+
+.select option{
+    background-color: white;
+}
+
+#tiempo span{
+    color: #080808;
+}
+
+#reiniciar{
+    background-color: gray;
+}
+
+#cancelar{
+    background-color: white;
+}
+
+.bordeGris{
+    border: 3px solid gray;
+}
+
+.bordeVerde{
+    border: 3px solid rgb(0 255 13);
+}
+.bordeRojo{
+    border: 3px solid #ea0000c4;
+}
+.bordeBlanco{
+    border: 3px solid white;
+}
+
+.verde{
+    background-color: rgb(0 255 13 / 52%);
+    color: #004600;
+}
+.rojo{
+    background-color: #ea0000c4;
+    color: #4a0000
+}

@@ -1,0 +1,34 @@
+.dark-body{
+  background-color: #060606;
+}
+.dark-body #pelota_fondo {
+  background: radial-gradient(white 4%, #e4e4e494 45%, #191919 71%);
+}
+.dark-body #buscando {
+  color: white;
+}
+.dark-body #buscando #spinner {
+  border: 3px solid white;
+  border-left-color: transparent;
+}
+.dark-body #hora_argentina {
+  color: white;
+}
+.dark-body #fecha_argentina {
+  color: white;
+}
+.dark-body #menu {
+  /* border-top: 1px solid black; */
+  background-color: #161616;
+}
+.dark-body #menu li {
+  border-right: 1px solid #ccc;
+}
+.dark-body #menu svg {
+  color: gray;
+}
+.dark-body #menu svg:hover {
+  color: #f8f8f8;
+}
+
+/*# sourceMappingURL=dark1.css.map */

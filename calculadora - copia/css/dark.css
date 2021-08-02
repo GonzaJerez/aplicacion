@@ -1,0 +1,47 @@
+
+.dark-body{
+    background-color: #060606;
+}
+
+.dark-body #content{
+
+    background-color: rgb(6,6,6);
+
+    border: 1px solid #3e3e3e;
+    box-shadow: 0px 0px 3px #353535
+}
+
+.dark-body #vista{
+
+    background: #dedede;;
+    color: black;
+
+}
+
+
+.dark-body #teclado button:active{
+    background-color: rgb(168, 168, 168);
+}
+
+.dark-body .gris{
+    background-color: rgb(255 255 255);
+}
+
+.dark-body .signo{
+    background-color: #ffa500;
+    color: white;
+}
+
+.dark-body .cambiaFondo:focus{
+    background-color: white;
+    color: #ffa500;
+}
+
+.dark-body .numeros{
+    background-color: #424242;
+    color: white;
+}
+
+.dark-body #atras svg{
+    color: #ccc;
+}

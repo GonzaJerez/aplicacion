@@ -1,0 +1,37 @@
+.dark-body{
+    background-color: #060606;
+
+    #pelota_fondo{
+        background: radial-gradient(white 4% ,#e4e4e494 45%, #191919 71%);
+    }
+    #buscando{
+        color: white;
+        #spinner{
+
+            border: 3px solid white;
+            border-left-color: transparent;
+        }     
+    }
+    #hora_argentina{
+        color: white;
+    }
+    
+    #fecha_argentina{
+        color: white;
+    }
+
+    #menu{
+        /* border-top: 1px solid black; */
+        background-color: rgb(22, 22, 22);
+        li{
+
+            border-right: 1px solid #ccc;
+        }
+        svg{
+            color: gray;
+        }
+        svg:hover{
+            color: rgb(248, 248, 248);
+        }
+    }
+}

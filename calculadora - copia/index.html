@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme" rel="stylesheet" type="text/css" href="./css/dark.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="./css/light.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script defer src="./js/main.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body class="dark-body">
+
+    <a id="atras" href="../pantalla_inicio/index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg>
+    </a>
+
+    <div id="content">
+        <section>
+           <input type="text" value='0' id="vista" disabled='disabled'>
+        </section>
+        <div id="teclado">
+            <!-- PRIMERA FILA -->
+            <button type="button" class="gris" id="AC" onclick="return borrar()">AC</button>
+            <button type="button" class="gris" id="mas_menos" onclick="return pos_neg()">+/-</button>
+            <button type="button" class="gris" id="porcent" onclick="return porcentaje()">%</button>
+            <button type="button" class="signo cambiaFondo" id="dividido" onclick="return sacando_cuenta('division')">/</button>
+
+            <!-- SEGUNDA FILA -->
+            <button type="button" class="numeros" id="seven" onclick="return write_number('7')">7</button>
+            <button type="button" class="numeros" id="eight" onclick="return write_number('8')">8</button>
+            <button type="button" class="numeros" id="nine" onclick="return write_number('9')">9</button>
+            <button type="button" class="signo cambiaFondo" id="por" onclick="return sacando_cuenta('multiplicacion')">x</button>
+
+            <!-- TERCERA FILA -->
+            <button type="button" class="numeros" id="four" onclick="return write_number('4')">4</button>
+            <button type="button" class="numeros" id="five" onclick="return write_number('5')">5</button>
+            <button type="button" class="numeros" id="six" onclick="return write_number('6')">6</button>
+            <button type="button" class="signo cambiaFondo" id="menos" onclick="return sacando_cuenta('resta')">-</button>
+
+            <!-- CUARTA FILA -->
+            <button type="button" class="numeros" id="one" onclick="return write_number('1')">1</button>
+            <button type="button" class="numeros" id="two" onclick="return write_number('2')">2</button>
+            <button type="button" class="numeros" id="three" onclick="return write_number('3')">3</button>
+            <button type="button" class="signo cambiaFondo" id="mas" onclick="return sacando_cuenta('suma')">+</button>
+
+            <!-- QUINTA FILA -->
+            <button type="button" class="numeros" id="cero" onclick="return write_number('0')">0</button>
+            <button type="button" class="numeros"  id="punto" onclick="return coma()">,</button>
+            <button type="button" class="signo" id="igual" onclick="return result_final()">=</button>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
