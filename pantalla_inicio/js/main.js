@@ -36,6 +36,11 @@ fondo();
 
 // localStorage.setItem('visit','0')
 
+if(localStorage.getItem('visit') == null){
+    localStorage.getItem('visit') = '0';
+};
+
+
 function no_salir() {
     window.onbeforeunload = function () { };
 
