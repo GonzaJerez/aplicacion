@@ -81,10 +81,10 @@ body{
 }
 
 .form-switch{
-    float: left;
+    float: right;
     display: flex;
     height: 125px;
-    margin-left: 400px;
+    margin-right: 100px;
     align-items: center;
 }
 
@@ -94,10 +94,10 @@ body{
 }
 
 .alarma_editada{
-    float: left;
+    float: right;
     display: flex;
     height: 125px;
-    margin-left: 400px;
+    margin-right: 100px;
     align-items: center;
 }
 
@@ -112,7 +112,7 @@ body{
     height: 40px;
     padding: 5px;
     margin-top: 42px;
-    margin-left: 50px;
+    right: 400px;
     transition: all 500ms;
 }
 

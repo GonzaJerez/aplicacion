@@ -164,7 +164,7 @@ function pegar_alarmas() {
                     <div>
                         <button type="button" disabled="disabled" class="hora" id="hora${contador}">${element.hora}:${element.minutos}</button>
                     </div>
-                    <p class="nombre_alarma">
+                    <p class="nombre_alarma" id="nombre_alarma${contador}">
                         ${element.descripcion}
                     </p>
                 </div>
@@ -264,8 +264,12 @@ function tiempo_restante(indice) {
       setTimeout(function(){
           span.style.display = 'none';
       },3000)
+      document.querySelector('#hora'+indice).style.color = '#f5f5f5';
+      document.querySelector('#nombre_alarma'+indice).style.color = '#f5f5f5';
   }else{
       span.style.display = 'none';
+      document.querySelector('#hora'+indice).style.color = '#afafaf87';
+      document.querySelector('#nombre_alarma'+indice).style.color = '#afafaf87'
   }
 
 }
@@ -333,6 +337,7 @@ if(JSON.parse(localStorage.getItem('alarmas')) != null) {
         minutos: '00',
         descripcion: 'Alarma de demostracion'
     }
+    contenedor_alarmas.innerHTML = '';
     alarmas.push(alarma);
 }
 pegar_alarmas()
