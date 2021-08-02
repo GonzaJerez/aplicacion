@@ -264,8 +264,8 @@ function tiempo_restante(indice) {
       setTimeout(function(){
           span.style.display = 'none';
       },3000)
-      document.querySelector('#hora'+indice).style.color = '#f5f5f5';
-      document.querySelector('#nombre_alarma'+indice).style.color = '#f5f5f5';
+      document.querySelector('#hora'+indice).style.color = '';
+      document.querySelector('#nombre_alarma'+indice).style.color = '';
   }else{
       span.style.display = 'none';
       document.querySelector('#hora'+indice).style.color = '#afafaf87';
