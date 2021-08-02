@@ -264,8 +264,14 @@ function tiempo_restante(indice) {
       setTimeout(function(){
           span.style.display = 'none';
       },3000)
-      document.querySelector('#hora'+indice).style.color = '';
-      document.querySelector('#nombre_alarma'+indice).style.color = '';
+      if (localStorage.getItem('fondo') == 'claro') {
+          
+          document.querySelector('#hora'+indice).style.color = '#060606';
+          document.querySelector('#nombre_alarma'+indice).style.color = '#060606';
+      }else{
+        document.querySelector('#hora'+indice).style.color = '#f5f5f5';
+        document.querySelector('#nombre_alarma'+indice).style.color = '#f5f5f5';
+      }
   }else{
       span.style.display = 'none';
       document.querySelector('#hora'+indice).style.color = '#afafaf87';
